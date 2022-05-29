@@ -49,5 +49,5 @@
     }
   },
   "tags": [],
-  "implicitDependencies": ["@adaskothebeast/models"]
+  "implicitDependencies": ["models"]
 }

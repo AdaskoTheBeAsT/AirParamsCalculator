@@ -1,14 +1,22 @@
 import styled from '@emotion/styled';
-import NxWelcome from './nx-welcome';
+import { QueryClient, QueryClientProvider } from 'react-query';
+import { ReactQueryDevtools } from 'react-query/devtools';
+
+import { UserPreferencesPage } from './user-preferences-page';
 
 const StyledApp = styled.div`
   // Your style here
 `;
 
+const client = new QueryClient();
+
 export function App() {
   return (
     <StyledApp>
-      <NxWelcome title="ui" />
+      <QueryClientProvider client={client}>
+        <UserPreferencesPage></UserPreferencesPage>
+        {/* <ReactQueryDevtools initialIsOpen /> */}
+      </QueryClientProvider>
     </StyledApp>
   );
 }
