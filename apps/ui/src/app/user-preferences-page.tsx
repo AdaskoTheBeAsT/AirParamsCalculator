@@ -1,4 +1,4 @@
-import { PressureUnit, enumKeysAsString } from '@adaskothebeast/metric-units';
+import { PressureUnit } from '@adaskothebeast/metric-units';
 import { useMemo } from 'react';
 
 import useUserPreferences from './hooks/use-user-preferences';
@@ -10,6 +10,5 @@ export function UserPreferencesPage() {
     return PressureUnit.getLabel(unitValue);
   }, [data]);
 
-  const a = enumKeysAsString(PressureUnit);
   return <div>{pressureUnit}</div>;
 }

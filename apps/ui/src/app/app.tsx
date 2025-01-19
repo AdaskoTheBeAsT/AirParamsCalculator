@@ -1,6 +1,5 @@
 import styled from '@emotion/styled';
 import { QueryClient, QueryClientProvider } from 'react-query';
-import { ReactQueryDevtools } from 'react-query/devtools';
 
 import { UserPreferencesPage } from './user-preferences-page';
 
